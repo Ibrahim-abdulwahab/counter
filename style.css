@@ -8,3 +8,30 @@ html {
     font-size: 10px;
     font-family:  'Poppins', sans-serif;
 }
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    font-weight: 600;
+}
+#number{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    
+}
+.buttons button{
+    padding: 5px 8px;
+    font-size: 0.3em;
+    border-radius: 10px;
+    color: grey;
+}

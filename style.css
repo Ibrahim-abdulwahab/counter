@@ -34,4 +34,9 @@ main{
     font-size: 0.3em;
     border-radius: 10px;
     color: grey;
+    transition: 1.2s;
+}
+.buttons button:hover{
+    color: white;
+    background-color: black;
 }

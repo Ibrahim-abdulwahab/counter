@@ -4,9 +4,21 @@ window.addEventListener('load', function(){
     const decrease=document.getElementById("decrease")
     const reset=document.getElementById("reset")
     let score=0;
+
+    const color=()=>{
+        if (score<0){
+            number.style.color="red"
+        }
+        else if (score>0){
+            number.style.color="green"
+        }
+        else {number.style.color = "black"}
+    }
+
     const addOne=()=>{
         score=score+1;
         number.innerHTML=score;
+        color();
     }
 
     increase.addEventListener("click",addOne)
@@ -14,6 +26,7 @@ window.addEventListener('load', function(){
     const minusOne=()=>{
         score=score-1;
         number.innerHTML=score;
+        color();
     }
 
     decrease.addEventListener("click",minusOne)
@@ -22,6 +35,7 @@ window.addEventListener('load', function(){
     const resetZero=()=>{
         score=0;
         number.innerHTML=score;
+        color();
     }
 
     reset.addEventListener("click",resetZero)
